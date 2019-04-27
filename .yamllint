@@ -1,0 +1,23 @@
+---
+# https://yamllint.readthedocs.io/en/stable/
+
+extends: default
+
+rules:
+  comments:
+    require-starting-space: true
+  comments-indentation: {}
+  line-length:
+    max: 120
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+  empty-lines:
+    max: 1
+    max-end: 1
+#  quoted-strings:
+#    quote-type: double
+  trailing-spaces: {}
+  new-lines:
+    type: unix
+

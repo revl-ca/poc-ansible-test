@@ -1,0 +1,8 @@
+---
+- debug:
+    msg: "{{ ansible_env }}"
+
+- name: Test idempotency
+  command: echo "Uh oh!"
+  changed_when: true
+

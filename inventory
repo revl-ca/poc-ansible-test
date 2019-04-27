@@ -1,0 +1,8 @@
+acs ansible_connection=local
+docker_ubuntu ansible_host=ansible-test-ubuntu
+
+[docker]
+docker_ubuntu
+
+[docker:vars]
+ansible_connection=docker

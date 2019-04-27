@@ -1,0 +1,11 @@
+FROM python:3-alpine3.6
+
+ARG YAMLLINT_VERSION_ARG=1.15.0
+ENV YAMLLINT_VERSION=$YAMLLINT_VERSION_ARG
+
+RUN pip install yamllint==${YAMLLINT_VERSION} && \
+    rm -rf ~/.cache/pip
+
+WORKDIR /yaml
+CMD ["yamllint", "--version"]
+
